@@ -29,14 +29,10 @@ func sumItemTypes(rucksacks [][]rune) int {
 		compartmentOneLen := len(v) / 2
 		compartmentOne := v[:compartmentOneLen]
 		compartmentTwo := v[compartmentOneLen:]
-		//fmt.Println(compartmentOne)
-		//fmt.Println(compartmentTwo)
-		//fmt.Printf("%v\naaaaaa", v)
 		for _, valueOne := range compartmentOne {
 			bool := false
 			for _, valueTwo := range compartmentTwo {
 				if valueOne == valueTwo {
-					//fmt.Println(valueOne)
 					matches = append(matches, valueOne)
 					bool = true
 					break
